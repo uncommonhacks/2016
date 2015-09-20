@@ -1,27 +1,17 @@
 {
   "name": "quirkhax",
-  "version": "1.0.0",
-  "description": "the ultimate hackathon at the university of chicago",
-  "main": "app.js",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/stephenhuh/quirkhax.git"
-  },
-  "keywords": [
-    "hackathon",
-    "chicago",
-    "quirkhax"
-  ],
-  "author": "stephen huh",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/stephenhuh/quirkhax/issues"
-  },
-  "homepage": "https://github.com/stephenhuh/quirkhax#readme",
   "dependencies": {
-    "express": "^4.13.3"
+    "body-parser": "~1.13.2",
+    "cookie-parser": "~1.3.5",
+    "debug": "~2.2.0",
+    "express": "~4.13.1",
+    "jade": "~1.11.0",
+    "morgan": "~1.6.1",
+    "serve-favicon": "~2.3.0"
   }
 }
