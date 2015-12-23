@@ -1,5 +1,7 @@
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box; 
+  font-family: 'Open Sans', sans-serif;
+  }
 
 html, body {
   height: 100%;
@@ -7,9 +9,8 @@ html, body {
   font-size: 62.5%; }
 
 .title-text {
-  font-family: Open Sans;
   line-height: 50px;
-  /*line-height and height == same for text center */
+  //line-height and height == same for text center 
   color: white;
   text-align: center;
   letter-spacing: 3px; }
@@ -22,7 +23,6 @@ html, body {
   -o-background-size: cover;
   background-size: cover;
   z-index: 300;
-  
   }
 
 
@@ -68,7 +68,7 @@ html, body {
   z-index: 302;
   position: fixed;
   margin: auto;
-  top: 520; 
+  top: 530; 
   left: 0;
   bottom: 0;
   right: 0;
