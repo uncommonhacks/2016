@@ -32,6 +32,7 @@ app.use(function(req, res, next) {
   next(err);
 });
 
+
 // error handlers
 
 // development error handler
@@ -56,5 +57,5 @@ app.use(function(err, req, res, next) {
   });
 });
 
-
+app.set('port', process.env.PORT || 3000);
 module.exports = app;
