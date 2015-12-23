@@ -31,7 +31,7 @@ html, body {
 
 #start-text {
   z-index: 302;
-  position: absolute;
+  position: fixed;
   margin: auto;
   top: 30;
   left: 0;
@@ -56,15 +56,16 @@ html, body {
   bottom: 130;
   right: 0;
   margin: auto;
-  position: absolute;
+  position: fixed;
   width: 300px;
   height: 101px;
   z-index: 302; }
 
 #date {
   z-index: 302;
-  position: absolute;
-  top: 380;
+  position: fixed;
+  margin: auto;
+  top: 520;
   left: 0;
   bottom: 0;
   right: 0;
