@@ -2,7 +2,10 @@
     <title>&#220;n&#231;&#246;mm&#246;n Ha&#162;ks</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css"/>
 	<link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel='stylesheet prefetch' href='http://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css'>
+	<link rel="stylesheet" href="/stylesheets/social-buttons.css">
 	<!--[if lte IE 6]>
     <style type="text/css">
     	#container {
@@ -10,15 +13,16 @@
     	}
     </style>
     <![endif]-->
-	<script>
-		
-	</script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 </head>
-
 <body>
+
 <a id="mlh-trust-badge" style="position:fixed;top:0;left:50px;max-width:100px;width:10%;min-width: 60px;display:block;z-index:10000" href="https://mlh.io/seasons/s2016/events?utm_source=s2016&utm_medium=TrustBadge&utm_campaign=s2016" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/s2016.png" alt="MLH Official - Spring 2016" style="width:100%;" ></a>
-    <section id="wrapper">
+
+<!-- skeltal doot doot -->
+<a href="https://www.facebook.com/uncommonhacks/photos/a.1129539923730357.1073741828.1129538927063790/1129539910397025/?type=3&permPage=1" target="_blank"><div id="skeltal"></div></a>
+    <section id="tv">
 		<div id="date" class="title-text">
 			apr 16 - 17
 		</div>
@@ -30,19 +34,104 @@
 		</a>
 		<div id="layer">
 		</div>
-	</div>
-	<div id ="ABOUT"></div>
-	<div id ="Schedule"></div>
-	<div id ="Partners"></div>
-	<div id ="Sponsors"></div>
-	<div id ="FAQ"></div>
-	<div id ="contactus"></div>
-	<footer></footer>
+		<img id="remote" src="/images/remote.png" height="300" ></img>
+	</section>
+	<!-- //Insert Later
+	<section id ="ABOUT">
+		<h1>The Oddest Hackathon</h1>
+		<div class="summary"><p>Uncommon Hacks is a one of a kind hackathon, if you can call it that. For years UChicago has prided itself with its quirkiness. We're looking for the most uncommon things that hackers can build. For 24 hours you'll indulge in creating insanely unique and memorable products. </p></div>
+	</section>
+	<section id ="Schedule">
 	
+	</section>
+	<div id ="Partners"></div>
+		<img class="partner" src="/images/mlh-logo.png"></img>
+
+	<div id ="Sponsors"></div>
+	<div id ="faq">
+		<h2>Is there a Code of Conduct?</h2>	
+		<p>Yes we abide by the <a href="http://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank">Major League Hacking Code of Conduct</a></p>
+	
+	</div>
+	<div id ="contactus">
+		<h2>Got questions? Email us at celery@uncommonhacks.com. We'll do our best to help you out.</h2>
+	</div>
+	<div id="team"></div>
+	-->
+	<footer id="footer">
+		<p class="title-text footer-text">SHARE US</p>
+	    <a href="http://twitter.com/uncommonhacks" class="icon-button twitter"><i class="icon-twitter"></i><span></span></a>
+		<a href="http://facebook.com/uncommonhacks" class="icon-button facebook"><i class="icon-facebook"></i><span></span></a>
+	</footer>
+
+	
+	<script src="js/social-buttons.js"></script>
 	<script>
 		//make skeltal appear
+	//list channels put caution in for 
+	var channels = [
+		'http://i.giphy.com/3oEduMLGc5PoJ7gcNy.gif', //
+		'http://i.giphy.com/7Q5D6jwu58Ezm.gif', //headphone pop
+		'http://i.giphy.com/13AN8X7jBIm15m.gif', //hacker overload
+		'http://i.giphy.com/Oy4nobvUxIonu.gif', //vhs vaporwave
+		'http://45.media.tumblr.com/39c9bfa3494694f3a1643220e5a1393a/tumblr_mqq02ouDy41qko0mwo1_250.gif', //very flexible
+		'http://45.media.tumblr.com/7608dca172c85a3121cde61455ad0e06/tumblr_ncbtd8cCYI1tc08xbo1_500.gif', //moving mountain face - usheresque
+		'http://49.media.tumblr.com/3ea7d291d2418efd5f3161c0077fbab5/tumblr_na9e4axOw91txar8to1_500.gif', //wifeee?
+		'http://i.giphy.com/RrcxqNJMT6Wti.gif', //hackers?!?!?
+		'http://49.media.tumblr.com/12249057135e8dd9734f923f071fe4de/tumblr_n8wuu5PBbY1th9xp9o1_400.gif', //creek windows
+		'http://i.giphy.com/jsp6TYPKpfXwY.gif', //oh sweet mr. skeltal
+		'http://i.giphy.com/MGiARNEh9BuYU.gif', //bad technology
+		'http://i.giphy.com/oBs8XXMyDBjSo.gif', //no wifi?????
+		'http://i.giphy.com/seVKc7SpJEoKc.gif', //internet explorer glitch
+		'http://i.giphy.com/iGSEDmbqxxlle.gif', //dont lie
+		'http://i.giphy.com/5pTRy8Q67nOOA.gif', //dont lie
+		//doge and animals
+		'http://i.giphy.com/glBmZAUttPmta.gif', // nigel + doge
+		'http://i.giphy.com/ZO8upuwNKfpm0.gif', //dogeception
+		'http://i.giphy.com/6gotdMeHVhneo.gif', //doge drums
+		'http://i.giphy.com/UX1fquhNEQsLK.gif', //gandalf doge
+		'http://i.giphy.com/Wiepe7LEg3MWc.gif', //doge enhance
+		'http://i.giphy.com/oqbkWDL2MvRcY.gif', //doge dance
+		'http://i.giphy.com/bLS5x5onbFPOg.gif' //parrotception
+
+	];
+	//change the channel
+	var accepted = false;
+	var warning = function(){
+		swal({   title: "Bright lights ahead?",   text: "Immediately stop viewing if you experience lightheadedness, twitching, jerking etc. A small percentage of people may experience seizures when exposed to certain images, including flashing lights or patterns. Also, make sure to thank mr. skeltal. Thanks.",   type: "warning",   showCancelButton: true,   confirmButtonColor: "#DD6B55",   confirmButtonText: "Yes, I know. I won't sue you.",   closeOnConfirm: false },
+				function(){   accepted = true;
+							  swal("You may pass...", "Make sure to thank mr. skeltal #uncommonsneezes", "success");
+							  changeChannel();
+				});	
+	};
+	var changeChannel = function(){
+			if (accepted){
+				var channel = channels[Math.floor(Math.random() * channels.length)]; //wow insane algorithm quick sort?!
+				$("#tv").css('backgroundImage','url('.concat(channel, ')') );
+			} else {
+				warning();
+			}
+
+	}
+
+	$("#remote").click(function(){
+		changeChannel();
+	});
 		
-		//add all other actions we talked about
+	//DISCLAIMER HERE:
+/*
+   A very small percentage of people may experience a seizure when exposed to certain visual images, including flashing lights or patterns that may appear in video games. Even people who have no history of seizures or epilepsy may have an undiagnosed condition that can cause these “photosensitive epileptic seizures” while watching video games.
+
+These seizures may have a variety of symptoms, including lightheadedness, altered vision, eye or face twitching, jerking or shaking of arms or legs, disorientation, confusion, or momentary loss of awareness. Seizures may also cause loss of consciousness or convulsions that can lead to injury from falling down or striking nearby objects.
+
+Immediately stop playing and consult a doctor if you experience any of these symptoms. Parents should watch for or ask their children about the above symptoms. Children and teenagers are more likely than adults to experience these seizures.
+
+The risk of photosensitive epileptic seizures may be reduced by taking the following precautions:
+
+Play in a well-lit room
+Do not play if you are drowsy or fatigued
+If you or any of your relatives have a history of seizures or epilepsy, consult a doctor before playing.
+*/
 		
 	</script>
 </body>

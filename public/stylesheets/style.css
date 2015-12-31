@@ -7,13 +7,54 @@ html, body {
   margin: 0;
   font-size: 62.5%; }
 
+h1 {
+  text-align: center;
+  font-size: 2.4rem; }
+
+h2 {
+  text-align: center;
+  font-size: 1.8rem; }
+
+footer {
+  height: 10vh;
+  background-color: black; }
+
+#footer {
+  text-align: center; }
+
+#social-buttons {
+  position: fixed; }
+
+#start-text {
+  z-index: 302;
+  position: absolute;
+  margin: auto;
+  top: 30;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border: 1px solid white;
+  height: 50px;
+  width: 150px;
+  font-size: 1.4rem; }
+
+#start-text:hover {
+  color: pink;
+  border: 1px solid pink; }
+
 .title-text {
   line-height: 50px;
   color: white;
   text-align: center;
   letter-spacing: 3px; }
 
-#wrapper {
+.footer-text {
+  line-height: initial;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  margin: 0px; }
+
+#tv {
   min-height: 100%;
   background: url("/images/offline.png") no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -28,9 +69,17 @@ html, body {
   opacity: 0.30;
   background-image: url("/images/static.gif"); }
 
+#remote {
+  position: absolute;
+  bottom: 10;
+  left: 50; }
+
+#remote:hover {
+  cursor: pointer; }
+
 #start-text {
   z-index: 302;
-  position: fixed;
+  position: absolute;
   margin: auto;
   top: 30;
   left: 0;
@@ -55,20 +104,58 @@ html, body {
   bottom: 130;
   right: 0;
   margin: auto;
-  position: fixed;
+  position: absolute;
   width: 300px;
   height: 101px;
   z-index: 302; }
 
 #date {
-  z-index: 302;
-  position: fixed;
+  position: absolute;
   margin: auto;
-  top: 530;
+  bottom: 260;
   left: 0;
-  bottom: 0;
   right: 0;
   font-size: 1.0rem; }
+
+#about {
+  visibility: hidden;
+  height: 30vh;
+  background-color: pink; }
+
+#faq {
+  visibility: hidden;
+  height: 40vh;
+  background-color: green; }
+
+#contactus {
+  visibility: hidden;
+  height: 40vh;
+  background-color: yellow; }
+
+#partners {
+  visibility: hidden;
+  height: 200px;
+  background-color: blue; }
+
+#skeltal {
+  position: fixed;
+  float: right;
+  top: 10;
+  right: 10;
+  background-image: url("/images/skeltal-square.jpg");
+  width: 300px;
+  height: 300px;
+  z-index: 303; }
+
+.summary {
+  visibility: hidden;
+  margin: 0 auto;
+  width: 50vh; }
+
+.partner {
+  visibility: hidden;
+  width: 100px;
+  height: 100px; }
 
 /*# sourceMappingURL=style.css.map */
 
