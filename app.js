@@ -10,13 +10,14 @@ var https = require('https');
 var fs = require('fs');
 var routes = require('./routes/index');
 var users = require('./routes/users');
-var ssl_options = {
+/*var ssl_options = {
     key: fs.readFileSync('../../etc/ssl/startssl/uncommonhacks.key'),
     cert: fs.readFileSync('../../etc/ssl/startssl/1_uncommonhacks.com_bundle.crt')
 };
+*/
 var app = express();
 var server = http.createServer(app);
-var secureServer = https.createServer(ssl_options, app);
+//var secureServer = https.createServer(ssl_options, app);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -29,15 +30,20 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(forceSSL);
 
-app.get('/*', function(req, res, next) { 
-  if (req.headers.host.match(/^www/) === null ) { //if theres not a www at beg o fstring
-    res.redirect('https://' + 'www.'+ req.headers.host );
-  } else {
-    next();     
-  }
-})
+
+//redirect www and non-http to https 
+if (app.get('env') === 'production'){
+	app.use(forceSSL);
+	app.get('/*', function(req, res, next) { 
+	  if (req.headers.host.match(/^www/) === null ) { 
+		res.redirect('https://' + 'www.'+ req.headers.host );
+	  } else {
+		next();     
+	  }
+	})
+}
+
 
 app.use('/', routes);
 app.use('/users', users);
@@ -73,5 +79,10 @@ app.use(function(err, req, res, next) {
   });
 });
 
-secureServer.listen(443);
+if (app.get('env') === 'development'){
+	app.set('port', 80);
+} else {
+	secureServer.listen(443);
+}
+
 module.exports = app;
