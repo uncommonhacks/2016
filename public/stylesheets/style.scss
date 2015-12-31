@@ -88,10 +88,18 @@ footer {
 	position: absolute;
 	bottom: 10;
 	left: 50;
+	-webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+	-ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+	//add hand later
 }
 
 #remote:hover {
 	cursor:pointer;
+	opacity: 0.85;
+
 }
 #start-text {
   z-index: 302;
