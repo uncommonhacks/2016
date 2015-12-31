@@ -19,10 +19,11 @@ h3 {
   font-size: 1.6rem; }
 
 footer {
-  height: 10vh;
-  background-color: black; }
+  height: 12vh;
+  background-color: black;
+  opacity: 0.80; }
 
-#footer {
+#footer-id {
   text-align: center; }
 
 #social-buttons {
