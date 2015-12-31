@@ -1,26 +1,43 @@
 var express = require('express');
+var forceSSL = require('express-force-ssl');
 var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-
+var http = require('http');
+var https = require('https');
+var fs = require('fs');
 var routes = require('./routes/index');
 var users = require('./routes/users');
-
+var ssl_options = {
+    key: fs.readFileSync('../../etc/ssl/startssl/uncommonhacks.key'),
+    cert: fs.readFileSync('../../etc/ssl/startssl/1_uncommonhacks.com_bundle.crt')
+};
 var app = express();
+var server = http.createServer(app);
+var secureServer = https.createServer(ssl_options, app);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 // uncomment after placing your favicon in /public
-app.use(favicon(path.join(__dirname,'public','images','favicon.ico')));
+app.use(favicon('public/images/favicon.ico'));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(forceSSL);
+
+app.get('/*', function(req, res, next) { 
+  if (req.headers.host.match(/^www/) === null ) { //if theres not a www at beg o fstring
+    res.redirect('https://' + 'www.'+ req.headers.host );
+  } else {
+    next();     
+  }
+})
 
 app.use('/', routes);
 app.use('/users', users);
@@ -31,7 +48,6 @@ app.use(function(req, res, next) {
   err.status = 404;
   next(err);
 });
-
 
 // error handlers
 
@@ -57,5 +73,5 @@ app.use(function(err, req, res, next) {
   });
 });
 
-app.set('port', process.env.PORT || 3000);
+secureServer.listen(443);
 module.exports = app;
