@@ -21,6 +21,10 @@ h2 {
 	font-size: 1.8rem;
 }
 
+h3 {
+	font-size: 1.6rem;
+}
+
 //blurb sections
 
 footer {
@@ -52,6 +56,16 @@ footer {
   color: pink;
   border: 1px solid pink; }
 
+#remote-text {
+  letter-spacing: 3px;
+  color: white;
+  z-index: 304;
+  position: absolute;
+  margin: auto;
+  bottom: 320;
+  left: 10;
+  font-size: 1.4rem;
+}
 
 .title-text {
   line-height: 50px;
@@ -99,7 +113,6 @@ footer {
 #remote:hover {
 	cursor:pointer;
 	opacity: 0.85;
-
 }
 #start-text {
   z-index: 302;
