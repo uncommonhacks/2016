@@ -10,14 +10,8 @@ var https = require('https');
 var fs = require('fs');
 var routes = require('./routes/index');
 var users = require('./routes/users');
-var ssl_options = {
-    key: fs.readFileSync('../../etc/ssl/startssl/uncommonhacks.key'),
-    cert: fs.readFileSync('../../etc/ssl/startssl/1_uncommonhacks.com_bundle.crt')
-};
-
 var app = express();
 var server = http.createServer(app);
-var secureServer = https.createServer(ssl_options, app);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -34,6 +28,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 //redirect www and non-http to https 
 if (app.get('env') === 'production'){
+	var ssl_options = {
+		key: fs.readFileSync('../../etc/ssl/startssl/uncommonhacks.key'),
+		cert: fs.readFileSync('../../etc/ssl/startssl/1_uncommonhacks.com_bundle.crt')
+	};
+	var secureServer = https.createServer(ssl_options, app);
 	app.use(forceSSL);
 	app.get('/*', function(req, res, next) { 
 	  if (req.headers.host.match(/^www/) === null ) { 

@@ -33,3 +33,5 @@ node_modules
 
 # mac stuff
 .DS_Store
+
+.bashrc
