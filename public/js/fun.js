@@ -47,13 +47,13 @@
 		'http://i.giphy.com/zNXvBiNNcrjDW.gif', //congrats u played yourself
 		'http://i.giphy.com/zNXvBiNNcrjDW.gif', //congrats u played yourself
 		'http://i.giphy.com/4iD503cQXNSsU.gif', //animated khaled
-		'http://i.giphy.com/ZyJIoVecMvQYw.gif', //10 things
 		//never gonna give you up
 		'http://i.giphy.com/xJdzgDYjNeiVG.gif'
 	];
 	//change the channel
 	var accepted = false;
 	var warning = function(){
+		mixpanel.track("Modal warning");
 		swal({   title: "Bright lights ahead?",   text: "Immediately stop viewing if you experience lightheadedness, twitching, jerking etc. A small percentage of people may experience seizures when exposed to certain images, including flashing lights or patterns. Also, make sure to thank mr. skeltal. Thanks.",   type: "warning",   showCancelButton: true,   confirmButtonColor: "#DD6B55",   confirmButtonText: "Yes, I know. I won't sue you.",   closeOnConfirm: false },
 				function(){   accepted = true;
 							  swal("You may watch TV", "Make sure to thank mr. skeltal #uncommonsneezes", "success");
@@ -71,6 +71,7 @@
 	}
 
 	$("#remote").click(function(){
+		mixpanel.track("Changed Channel");
 		changeChannel();
 	});
 		
