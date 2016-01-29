@@ -27,7 +27,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 //redirect www and non-http to https 
+console.log("outside");
 if (app.get('env') === 'production'){
+	console.log("inside");
 	var ssl_options = {
 		key: fs.readFileSync('../../etc/ssl/startssl/uncommonhacks.key'),
 		cert: fs.readFileSync('../../etc/ssl/startssl/1_uncommonhacks.com_bundle.crt')
@@ -59,6 +61,7 @@ app.use(function(req, res, next) {
 // development error handler
 // will print stacktrace
 if (app.get('env') === 'development') {
+	console.log("you in a dev environment");
   app.use(function(err, req, res, next) {
     res.status(err.status || 500);
     res.render('error', {
