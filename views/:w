@@ -172,44 +172,25 @@ Explanatory Sections
 
 
 #about {
-	height: 70vh;
+	height: 80vh;
 	background-image:  url("/images/space-coworking.jpg");
+	background-color: black;
 	opacity: 0.9;
 }
 
-#schedule {
-	@extend #about;
-	opacity: 0.3;
-	height: 0vh;
-	background-color: red;
-}
-
-#sponsors {
-	@extend #about;
-	opacity: 0.8;
-	height: 60vh;
-	background-color: red;
-}
 #faq {
-	@extend #about;
+	visibility: hidden;
 	height: 40vh;
+	background-color: green;
 }
 
 #contactus{
-	@extend #about;
-	background-image: none;
-	background-color: pink;
+	visibility: hidden;
 	height: 40vh;
-}
-
-.contact {
-	@extend .section-title;
-	font-size: 3.0rem;
-	border-bottom: none;
+	background-color: yellow;
 }
 
 #partners{
-	@extend #about;
 	visibility: hidden;
 	height: 200px;
 	background-color: blue;
@@ -228,8 +209,7 @@ Explanatory Sections
 }
 
 .summary {
-	line-height: 3.5rem;
-	margin-top: 20px;
+	line-height: 2.5rem;
 	margin-left: 40px;
 	width: 75vh;
 	font-size: 1.4rem;

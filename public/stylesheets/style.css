@@ -8,7 +8,6 @@ html, body {
   font-size: 62.5%; }
 
 h1 {
-  text-align: center;
   font-size: 2.4rem; }
 
 h2 {
@@ -137,20 +136,47 @@ footer {
   right: 0;
   font-size: 1.0rem; }
 
-#about {
-  visibility: hidden;
-  height: 30vh;
-  background-color: pink; }
+/**********************
+ **********************
+ **********************
+Explanatory Sections
+***********************
+***********************/
+.section-title, .contact {
+  font-size: 4.0rem;
+  color: white;
+  margin-top: 40px;
+  margin-left: 40px;
+  padding-bottom: 10px;
+  border-bottom: 5px solid #FFF;
+  display: inline-block; }
+
+#about, #schedule, #sponsors, #faq, #contactus, #partners {
+  height: 70vh;
+  background-image: url("/images/space-coworking.jpg");
+  opacity: 0.9; }
+
+#schedule {
+  opacity: 0.3;
+  height: 0vh;
+  background-color: red; }
+
+#sponsors {
+  opacity: 0.8;
+  height: 60vh;
+  background-color: red; }
 
 #faq {
-  visibility: hidden;
-  height: 40vh;
-  background-color: green; }
+  height: 40vh; }
 
 #contactus {
-  visibility: hidden;
-  height: 40vh;
-  background-color: yellow; }
+  background-image: none;
+  background-color: pink;
+  height: 40vh; }
+
+.contact {
+  font-size: 3.0rem;
+  border-bottom: none; }
 
 #partners {
   visibility: hidden;
@@ -168,9 +194,12 @@ footer {
   z-index: 303; }
 
 .summary {
-  visibility: hidden;
-  margin: 0 auto;
-  width: 50vh; }
+  line-height: 3.5rem;
+  margin-top: 20px;
+  margin-left: 40px;
+  width: 75vh;
+  font-size: 1.4rem;
+  color: white; }
 
 .partner {
   visibility: hidden;
