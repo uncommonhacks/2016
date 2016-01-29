@@ -156,7 +156,7 @@ Explanatory Sections
 
 #about, #schedule, #sponsors, #faq, #contactus, #partners {
   height: 70vh;
-  background-image: url("/images/space-coworking.jpg");
+  background-image: url("/images/desk.jpg");
   background-size: cover;
   opacity: 0.9; }
 
@@ -172,6 +172,7 @@ Explanatory Sections
   background-color: black; }
 
 #faq {
+  background-image: url("/images/space-coworking.jpg");
   height: 40vh; }
 
 #contactus {

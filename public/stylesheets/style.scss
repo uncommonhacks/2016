@@ -176,7 +176,7 @@ Explanatory Sections
 
 #about {
 	height: 70vh;
-	background-image:  url("/images/space-coworking.jpg");
+	background-image: url("/images/desk.jpg"); 
 	background-size: cover;
 	opacity: 0.9;
 }
@@ -197,6 +197,7 @@ Explanatory Sections
 }
 #faq {
 	@extend #about;
+	background-image: url("/images/space-coworking.jpg");
 	height: 40vh;
 }
 
