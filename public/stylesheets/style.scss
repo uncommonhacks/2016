@@ -14,6 +14,9 @@ h1 {
 	font-size: 2.4rem;
 }
 
+a {
+	color: inherit;
+}
 //
 h2 {
 	text-align: center;
@@ -174,6 +177,7 @@ Explanatory Sections
 #about {
 	height: 70vh;
 	background-image:  url("/images/space-coworking.jpg");
+	background-size: cover;
 	opacity: 0.9;
 }
 
@@ -186,9 +190,10 @@ Explanatory Sections
 
 #sponsors {
 	@extend #about;
+	background-image: none;
 	opacity: 0.8;
 	height: 60vh;
-	background-color: red;
+	background-color: black;
 }
 #faq {
 	@extend #about;
@@ -198,7 +203,7 @@ Explanatory Sections
 #contactus{
 	@extend #about;
 	background-image: none;
-	background-color: pink;
+	background-color: black;
 	height: 40vh;
 }
 
@@ -243,6 +248,17 @@ Explanatory Sections
 	height: 100px;
 }
 
+/**********************
+ **********************
+ **********************
+ MISC
+***********************
+***********************/
+
+.no-underline {
+	text-decoration: none;
+
+}
 
 /*# sourceMappingURL=style.css.map */
 

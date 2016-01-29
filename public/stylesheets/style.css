@@ -10,6 +10,9 @@ html, body {
 h1 {
   font-size: 2.4rem; }
 
+a {
+  color: inherit; }
+
 h2 {
   text-align: center;
   font-size: 1.8rem; }
@@ -154,6 +157,7 @@ Explanatory Sections
 #about, #schedule, #sponsors, #faq, #contactus, #partners {
   height: 70vh;
   background-image: url("/images/space-coworking.jpg");
+  background-size: cover;
   opacity: 0.9; }
 
 #schedule {
@@ -162,16 +166,17 @@ Explanatory Sections
   background-color: red; }
 
 #sponsors {
+  background-image: none;
   opacity: 0.8;
   height: 60vh;
-  background-color: red; }
+  background-color: black; }
 
 #faq {
   height: 40vh; }
 
 #contactus {
   background-image: none;
-  background-color: pink;
+  background-color: black;
   height: 40vh; }
 
 .contact {
@@ -205,6 +210,15 @@ Explanatory Sections
   visibility: hidden;
   width: 100px;
   height: 100px; }
+
+/**********************
+ **********************
+ **********************
+ MISC
+***********************
+***********************/
+.no-underline {
+  text-decoration: none; }
 
 /*# sourceMappingURL=style.css.map */
 
