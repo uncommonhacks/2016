@@ -1,6 +1,13 @@
+/*
+<div align="center" style="z-index:9;visibility:visible;"><a href="http://www.totallyfreecursors.com/" target="_blank" class="tfc"><img src="http://downloads.totallyfreecursors.com/public/CursorsLogo88-31.gif" border="0" width="88" height="31" alt="Free Hilary Duff Cursors at www.totallyfreecursors.com" /></a></div><style>HTML,BODY{cursor: url("http://downloads.totallyfreecursors.com/cursor_files/hilaryduff.cur"), url("http://downloads.totallyfreecursors.com/thumbnails/hilary-duff.gif"), auto;}</style>
+
+
+
+*/
 * {
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'Open Sans', sans-serif;
+  cursor: url("http://downloads.totallyfreecursors.com/cursor_files/hilaryduff.cur"), url("http://downloads.totallyfreecursors.com/thumbnails/hilary-duff.gif"), auto; }
 
 html, body {
   height: 100%;
@@ -12,6 +19,9 @@ h1 {
 
 a {
   color: inherit; }
+
+a:hover {
+  cursor: url(http://cur.cursors-4u.net/people/peo-8/peo954.ani), url(http://cur.cursors-4u.net/people/peo-8/peo954.png), initial; }
 
 h2 {
   text-align: center;
