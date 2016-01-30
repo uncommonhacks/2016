@@ -7,7 +7,7 @@
 * {
   box-sizing: border-box; 
   font-family: 'Open Sans', sans-serif;
-  cursor: url("http://downloads.totallyfreecursors.com/cursor_files/hilaryduff.cur"), url("http://downloads.totallyfreecursors.com/thumbnails/hilary-duff.gif"), auto;
+  cursor: url("/images/duff.cur"), url("/images/duff.gif"), auto;
 }
 
 html, body {
@@ -26,7 +26,7 @@ a {
 }
 
 a:hover{
-	cursor: url(http://cur.cursors-4u.net/people/peo-8/peo954.ani), url(http://cur.cursors-4u.net/people/peo-8/peo954.png), initial;
+	cursor: url("/images/zayn.cur"), initial;
 }
 //
 h2 {
