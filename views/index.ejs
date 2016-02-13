@@ -33,6 +33,7 @@
 	<link rel="stylesheet" href="/stylesheets/reset.css" />
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css"/>
+	<link rel="stylesheet" href="/stylesheets/bootstrap.min.css" />
 	<link rel="stylesheet" href="/stylesheets/style.css" />
        <link rel='stylesheet' href='https://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css'>
 	<link rel="stylesheet" href="/stylesheets/social-buttons.css">
@@ -61,7 +62,7 @@
 	<script>mixpanel.track("Front Page");</script>
 
 </head>
-<body>
+<body id="bootstrap-tweaks">
 
 <a id="mlh-trust-badge" style="position:fixed;top:0;left:50px;max-width:100px;width:10%;min-width: 60px;display:block;z-index:10000" href="https://mlh.io/seasons/s2016/events?utm_source=s2016&utm_medium=TrustBadge&utm_campaign=s2016" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/s2016.png" alt="MLH Official - Spring 2016" style="width:100%;" ></a>
 
@@ -83,16 +84,19 @@
 		<img id="remote" src="/images/remote.png" height="300" ></img>
 	</section>
 	<section id ="about">
-		<h1 class="section-title">the <a href="http://bit.ly/1NEq2Oe" class="no-underline">the first meme-based hackathon</a></h1>
-		<div class="summary">it's better to be quirky. come discover and expand the limits of your quirkiness and creativity while innovating, designing, and exploring technology. the most exciting and anticipated experience under the title of "hackathon" you will ever be a part of. </div>
-		<div class = "summary">located in the chicago innovation exchange (CIE), a beautiful incubator space, you will get to spend 24 hours hacking away with memes and cutting edge technology for facetime with companies, learning experiences with mentors, and an unforgettable memory.</div>
-		<div class="summary">dank? nah, uncommon.</div>
+		<div class="container">
+			<h1 class="section-title"><a href="http://bit.ly/1NEq2Oe" class="no-underline">the first m3m3-based hackathon</a></h1>
+			<div class="summary">it's better to be quirky. come discover and expand the limits of your quirkiness and creativity while innovating, designing, and exploring technology. the most exciting and anticipated experience under the title of "hackathon" you will ever be a part of. </div>
+			<div class = "summary">located in the chicago innovation exchange (CIE), a beautiful incubator space, you will get to spend 24 hours hacking away with memes and cutting edge technology for facetime with companies, learning experiences with mentors, and an unforgettable memory.</div>
+			<div class="summary">dank? nah, uncommon.</div>
+		</div>
 	</section>
 	<section id ="schedule">
 		<h1 class="section-title"><a href="http://bit.ly/1Uy9gpJ" class="no-underline">schedule</a></h1>
 		<div class="summary">coming soon...</div>
 	</section>
 	<section id ="sponsors">
+		<div class="container">
 		<div><h1 class="section-title"><a href="http://bit.ly/1Uy9gpJ" class="no-underline">sponsors</a></h1></div>
 		<div class="contact">contact sponsors@uncommonhacks.com</div>
 		<div class="tier-1">
@@ -102,14 +106,119 @@
 		<div class="tier-3">
 		</div>
 		<h1 class="section-title"><a href="http://bit.ly/1RSER7L">partners</a></h1>
+		</div>
 	</section>
 	<section id ="faq">
-		<h1 class="section-title">is there a code of conduct?</h1>	
-		<div class="summary">yes we abide by the <a href="http://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank">major league hacking code of conduct</a></div>
+		<div class="container">
+			<h1 class="section-title">faq</h1>	
+			<div class="row">
+					<div class="col-md-4">
+						<div class="question">
+							<h1 class="faq-title">what's a hackathon?</h1>
+							<div class="answer">hackathons are hacking marathons where attendees are encouraged to collaborate to anything! hackers will be provided an environment full of fun and support to make sure the necessary tools are provided to create excellent things, have fun, and make lasting memories.</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="question">
+							<h1 class="faq-title">do i need a team?</h1>
+							<div class="answer">nope, you can hack solo! but you are encouraged to meet new friends and create teams. there will be a designated time to meet other hackers! </div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="question">
+							<h1 class="faq-title">how much does it cost?</h1>
+							<div class="answer">attendees do not need to pay anything. uncommon hacks will provide wifi, meals, swag, workspace, and limited transportation</div>
+						</div>
+					</div>
+			</div>
+			<div class="row">
+					<div class="col-md-4">
+						<div class="question">
+							<h1 class="faq-title">when is uncommon hacks?</h1>
+							<div class="answer">thats for us to know and for you to figure out. ha ha jk. event starts APR 16, 9AM and ends APR 17, 5PM. </div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="question">
+							<h1 class="faq-title">where is uncommon hacks?</h1>
+							<div class="answer">the beautiful Chicago Innovation Exchange space, 2nd Floor, 1452 E 53rd St, Chicago, IL, 60615. </div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="question">
+							<h1 class="faq-title">what can i build?</h1>
+							<div class="answer">uncommon hacks encourages you to build the most creative projects you can think of. this is a safe space to create the weirdest, the quirkiest, and the most amazing projects ever. the environment and events will support this.</div>
+						</div>
+					</div>
+			</div>
+			<div class="row">
+					<div class="col-md-4">
+						<div class="question">
+							<h1 class="faq-title">what should i bring?</h1>
+							<div class="answer">attendees should bring a valid form of ID. other recommended items are: laptops, blankets or sleeping bags, toiletries, chargers, and whatever might bring you more success!</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="question">
+							<h1 class="faq-title">what if i have another question?</h1>
+							<div class="answer">tweet us @uncommonhacks or email celery@uncommonhacks.com or support@uncommonhacks.com!</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="question">
+							<h1 class="faq-title">do you have a code of conduct?</h1>
+							<div class="answer">yes we abide by the <a href="http://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank">major league hacking code of conduct</a></div>
+						</div>
+					</div>
+			</div>
+			<div class="row">
+					<div class="col-md-4">
+						<div class="question">
+							<h1 class="faq-title">what's special about uncommon hacks?</h1>
+							<div class="answer">this hackathon is unreal. expect to never forget the experience with real memes, a john cena API challenge, and lots of fun. the team has worked intensely to create an environment where creative juices can flow best.</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="question">
+							<h1 class="faq-title">how big can teams be?</h1>
+							<div class="answer">teams can be as big as 4 and as small as 1 </div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="question">
+							<h1 class="faq-title">i'm an international student. can i attend?</h1>
+							<div class="answer">absolutely, the event will accept international students! uncommon hacks will do its best to reimburse students that require travel reimbursements.</div>
+						</div>
+					</div>
+			</div>
+			<div class="row">
+					<div class="col-md-4">
+						<div class="question">
+							<h1 class="faq-title">i'm a high school student. can i attend?</h1>
+							<div class="answer">this is tentative at the moment. we encourage you to apply regardless.</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="question">
+							<h1 class="faq-title">is my cursor brittany spears or hilary duff?</h1>
+							<div class="answer">yes.</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="question">
+							<h1 class="faq-title">what is the significance of celery?</h1>
+							<div class="answer">here. also annie doesnt like celery. </div>
+						</div>
+					</div>
+			</div>
+		</div>
+			<div class="summary">yes we abide by the <a href="http://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank">major league hacking code of conduct</a></div>
 	</section>
 	<section id ="contactus">
+		<div class="container">
 		<h1 class="section-title">contact us</h1>
 		<div class="summary">got questions? email us at celery@uncommonhacks.com or support@uncommonhacks.com. we'll do our best to help you out.</div>
+		</div>
 	</section>
 	<footer id="footer-id">
 		<p class="title-text footer-text">SHARE US</p>

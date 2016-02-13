@@ -6,7 +6,7 @@
 */
 * {
   box-sizing: border-box; 
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Comic Sans MS','Open Sans', sans-serif;
   cursor: url("/images/duff.cur"), url("/images/duff.gif"), auto;
 }
 
@@ -37,6 +37,19 @@ h2 {
 h3 {
 	font-size: 1.6rem;
 }
+
+
+//****************
+//Bootstrap Tweaks
+////////////////
+#bootstrap-tweaks .container{
+
+
+}
+
+
+
+
 
 //blurb sections
 
@@ -178,15 +191,30 @@ Explanatory Sections
 	font-size: 4.0rem;
 	color: white;
 	margin-top: 40px;
-	margin-left: 40px;
 	padding-bottom: 10px;
 	border-bottom: 5px solid #FFF;
 	display: inline-block;
 }
 
+.faq-title{
+	@extend .section-title;
+	margin-top: 0px;
+	border-bottom: initial;
+	font-size: 2.6rem;
+}
+
+.question {
+	margin-bottom: 45px;
+}
+
+.answer{
+	color: white;
+	font-size: 1.4rem;
+}
+
 
 #about {
-	height: 70vh;
+	height: 500px;
 	background-image: url("/images/desk.jpg"); 
 	background-size: cover;
 	opacity: 0.9;
@@ -208,8 +236,10 @@ Explanatory Sections
 }
 #faq {
 	@extend #about;
-	background-image: url("/images/space-coworking.jpg");
-	height: 40vh;
+	background-image: none;
+	background-color: black;
+	//background-image: url("/images/space-coworking.jpg");
+	height: 1200px; 
 }
 
 #contactus{
@@ -247,7 +277,6 @@ Explanatory Sections
 .summary {
 	line-height: 3.5rem;
 	margin-top: 20px;
-	margin-left: 40px;
 	width: 75vh;
 	font-size: 1.4rem;
 	color: white;
