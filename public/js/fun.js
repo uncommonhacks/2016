@@ -1,5 +1,8 @@
 		//make skeltal appear
 	//list channels put caution in for 
+	var waldo = function(){
+		console.log("waldo is at coordinates: 232.1, 132.4");
+	}
 	var channels = [
 		'http://i.giphy.com/3oEduMLGc5PoJ7gcNy.gif', //
 		'http://i.giphy.com/7Q5D6jwu58Ezm.gif', //headphone pop

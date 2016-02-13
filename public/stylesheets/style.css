@@ -176,7 +176,7 @@ Explanatory Sections
   font-size: 1.4rem; }
 
 #about, #schedule, #sponsors, #faq, #contactus, #partners {
-  height: 70vh;
+  height: 600px;
   background-image: url("/images/desk.jpg");
   background-size: cover;
   opacity: 0.9; }
@@ -241,6 +241,10 @@ Explanatory Sections
 ***********************/
 .no-underline {
   text-decoration: none; }
+
+.vid {
+  margin-left: auto;
+  margin-right: auto; }
 
 /*# sourceMappingURL=style.css.map */
 
