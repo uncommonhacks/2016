@@ -7,7 +7,7 @@
 * {
   box-sizing: border-box;
   font-family: 'Comic Sans MS','Open Sans', sans-serif;
-  cursor: url("../images/duff.cur"), url("../images/duff.gif"), auto; }
+  cursor: url("/images/duff.cur"), url("/images/duff.gif"), auto; }
 
 html, body {
   height: 100%;
@@ -21,7 +21,7 @@ a {
   color: inherit; }
 
 a:hover {
-  cursor: url("../images/zayn.cur"), initial; }
+  cursor: url("/images/zayn.cur"), initial; }
 
 h2 {
   text-align: center;
@@ -82,7 +82,7 @@ footer {
 
 #tv {
   min-height: 100%;
-  background: url("../images/offline.png") no-repeat center center fixed;
+  background: url("/images/offline.png") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -93,7 +93,7 @@ footer {
   min-height: 100%;
   z-index: 301;
   opacity: 0.30;
-  background-image: url("../images/static.gif"); }
+  background-image: url("/images/static.gif"); }
 
 #remote {
   position: absolute;
@@ -130,7 +130,7 @@ footer {
   cursor: pointer; }
 
 #logo {
-  background-image: url("../images/logo-uncommonhacks.png");
+  background-image: url("/images/logo-uncommonhacks.png");
   top: 0;
   left: 0;
   bottom: 130;
@@ -177,7 +177,7 @@ Explanatory Sections
 
 #about, #schedule, #sponsors, #faq, #contactus, #partners {
   height: 600px;
-  background-image: url("../images/desk.jpg");
+  background-image: url("/images/desk.jpg");
   background-size: cover;
   opacity: 0.9; }
 
@@ -189,7 +189,7 @@ Explanatory Sections
 #sponsors {
   background-image: none;
   opacity: 0.8;
-  height: auto;
+  height: 60vh;
   background-color: black; }
 
 #faq {
@@ -216,7 +216,7 @@ Explanatory Sections
   float: right;
   top: 10;
   right: 10;
-  background-image: url("../images/skeltal-square.jpg");
+  background-image: url("/images/skeltal-square.jpg");
   width: 300px;
   height: 300px;
   z-index: 303; }
@@ -249,18 +249,3 @@ Explanatory Sections
 /*# sourceMappingURL=style.css.map */
 
 /*# sourceMappingURL=style.css.map */
-
-/* Gray Scale */
-.hover-grey figure img {
-	-webkit-filter: grayscale(100%);
-	filter: grayscale(100%);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-}
-.hover-grey figure:hover img {
-	-webkit-filter: grayscale(0);
-	filter: grayscale(0);
-	transform:scale(1.1)
-}
-
-
