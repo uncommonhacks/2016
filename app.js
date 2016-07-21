@@ -31,8 +31,8 @@ console.log("outside");
 if (app.get('env') === 'production'){
 	console.log("inside");
 	var ssl_options = {
-		key: fs.readFileSync('../../etc/ssl/startssl/uncommonhacks.key'),
-		cert: fs.readFileSync('../../etc/ssl/startssl/1_uncommonhacks.com_bundle.crt')
+		key: fs.readFileSync('/etc/letsencrypt/live/uncommonhacks.com/privkey.pem'),
+		cert: fs.readFileSync('/etc/letsencrypt/live/uncommonhacks.com/fullchain.pem')
 	};
 	var secureServer = https.createServer(ssl_options, app);
 	app.use(forceSSL);
