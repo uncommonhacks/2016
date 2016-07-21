@@ -38,7 +38,7 @@ if (app.get('env') === 'production'){
 	app.use(forceSSL);
 	app.get('/*', function(req, res, next) { 
 	  if (req.headers.host.match(/^2016/) === null && req.headers.host.match(/^www/) === null ) { 
-		res.redirect('https://' + '2016.'+ req.headers.host );
+		res.redirect('https://' + 'www.'+ req.headers.host );
 	  } else {
 		next();     
 	  }
