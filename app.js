@@ -37,8 +37,8 @@ if (app.get('env') === 'production'){
 	var secureServer = https.createServer(ssl_options, app);
 	app.use(forceSSL);
 	app.get('/*', function(req, res, next) { 
-	  if (req.headers.host.match(/^www/) === null ) { 
-		res.redirect('https://' + 'www.'+ req.headers.host );
+	  if (req.headers.host.match(/^2016/) === null && req.headers.host.match(/^www/) === null ) { 
+		res.redirect('https://' + '2016.'+ req.headers.host );
 	  } else {
 		next();     
 	  }
