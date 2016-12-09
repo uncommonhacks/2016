@@ -26,24 +26,24 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 
-//redirect www and non-http to https 
-console.log("outside");
-if (app.get('env') === 'production'){
-	console.log("inside");
-	var ssl_options = {
-		key: fs.readFileSync('/etc/letsencrypt/live/uncommonhacks.com/privkey.pem'),
-		cert: fs.readFileSync('/etc/letsencrypt/live/uncommonhacks.com/fullchain.pem')
-	};
-	var secureServer = https.createServer(ssl_options, app);
-	app.use(forceSSL);
-	app.get('/*', function(req, res, next) { 
-	  if (req.headers.host.match(/^2016/) === null && req.headers.host.match(/^www/) === null ) { 
-		res.redirect('https://' + 'www.'+ req.headers.host );
-	  } else {
-		next();     
-	  }
-	})
-}
+// //redirect www and non-http to https 
+// console.log("outside");
+// if (app.get('env') === 'production'){
+// 	console.log("inside");
+// 	var ssl_options = {
+// 		key: fs.readFileSync('/etc/letsencrypt/live/uncommonhacks.com/privkey.pem'),
+// 		cert: fs.readFileSync('/etc/letsencrypt/live/uncommonhacks.com/fullchain.pem')
+// 	};
+// 	var secureServer = https.createServer(ssl_options, app);
+// 	app.use(forceSSL);
+// 	app.get('/*', function(req, res, next) { 
+// 	  if (req.headers.host.match(/^2016/) === null && req.headers.host.match(/^www/) === null ) { 
+// 		res.redirect('https://' + 'www.'+ req.headers.host );
+// 	  } else {
+// 		next();     
+// 	  }
+// 	})
+// }
 
 
 app.use('/', routes);
