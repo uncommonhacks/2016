@@ -81,10 +81,10 @@ app.use(function(err, req, res, next) {
   });
 });
 
-if (app.get('env') === 'development'){
+// if (app.get('env') === 'development'){
 	app.set('port', 80);
-} else {
-	secureServer.listen(443);
-}
+// } else {
+// 	secureServer.listen(443);
+// }
 
 module.exports = app;
